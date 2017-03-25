@@ -1,0 +1,8 @@
+-#!/bin/sh      
+ssh qauser@shopping-dev01.v2.com <<EOF        
+ cd /var/www/vhosts/jenkins_test  
+ git pull       
+ npm install
+ npm run build:prod       
+ exit       
+EOF
